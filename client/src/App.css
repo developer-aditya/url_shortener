@@ -1,0 +1,128 @@
+.searchbar {
+	width: 93% !important;
+	border: none !important;
+	font-size: 16px !important;
+	margin: 0.4rem 1.25rem !important;
+	outline: none !important;
+}
+.searchbar:focus {
+	border-bottom: none !important;
+	box-shadow: none !important;
+}
+
+.bar {
+	background-color: rgb(248, 248, 248);
+	margin: 0 auto;
+	width: 100%;
+	border-radius: 30px;
+	border: 1px solid #dadada;
+}
+.bar:hover {
+	box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+.bar:focus-within {
+	box-shadow: 1px 1px 8px 1px #dcdcdc;
+	outline: none;
+}
+
+.centerImage {
+	display: flex;
+	align-items: center;
+	min-width: 100%;
+	min-height: calc(100vh - 70px);
+	background-color: #0c374b;
+}
+.userPage {
+	min-width: 100%;
+	padding: 3rem 0;
+	min-height: calc(100vh - 70px);
+}
+
+.toast {
+	background-color: #346981 !important;
+}
+
+/* SignIn Modal */
+#signin-modal {
+	max-width: 450px !important;
+	color: #555 !important;
+}
+
+/* SignUp Modal */
+#signup-modal {
+	max-width: 500px !important;
+	min-height: 83% !important;
+	color: #555 !important;
+}
+.close-btn {
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	margin: 0.75rem !important;
+}
+.sign-btn {
+	width: 100% !important;
+	text-transform: capitalize !important;
+	font-size: 1.5rem !important;
+	height: 3.25rem !important;
+	border-radius: 5px !important;
+	box-shadow: none !important;
+	margin-bottom: 2rem !important;
+}
+
+/* Input Feilds custom color */
+input:focus,
+textarea:focus {
+	border-bottom: 1px solid #0391d8 !important;
+	box-shadow: 0 1px 0 0 #0391d8 !important;
+}
+label.active {
+	color: #0391d8 !important;
+}
+.prefix.active {
+	color: #0391d8 !important;
+}
+.collection-item {
+	padding: 1rem 1.5rem !important;
+}
+
+/* Spinner Button */
+.button--loading::after {
+	content: '' !important;
+	position: absolute !important;
+	width: 32px !important;
+	height: 32px !important;
+	top: 0 !important;
+	bottom: 0 !important;
+	right: 80% !important;
+	margin: auto !important;
+	border: 4px solid transparent !important;
+	border-top-color: #ffffff !important;
+	border-radius: 50% !important;
+	animation: button-loading-spinner 1s ease infinite !important;
+}
+@keyframes button-loading-spinner {
+	from {
+		transform: rotate(0turn);
+	}
+
+	to {
+		transform: rotate(1turn);
+	}
+}
+
+@media (max-width: 600px) {
+	#signin-modal,
+	#signup-modal {
+		width: 100% !important;
+		top: 0% !important;
+		min-height: 93vh !important;
+	}
+	.bar {
+		width: 100% !important;
+	}
+	.container {
+		margin: 0 0 !important;
+		width: 100% !important;
+	}
+}
